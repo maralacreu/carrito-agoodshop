@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgoodShop - Carrito de la compra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AgoodShop</h1>
+      <hr class="separator">
+    </header>
+
+    <main class="shop-layout">
+      <!-- Listado de productos -->
+      <section class="products-container">
+        <div class="table-header">
+          <span class="col-product">Producto</span>
+          <span class="col-qty">Cantidad</span>
+          <span class="col-price">Pr. Unidad</span>
+          <span class="col-total">Total</span>
+        </div>
+        <div id="products-list" class="products-list">
+          <!-- Los productos se inyectan dinámicamente mediante JS -->
+        </div>
+      </section>
+
+      <!-- Panel lateral de resumen / total -->
+      <aside class="cart-summary">
+        <h2>Total</h2>
+        <div id="summary-breakdown" class="summary-breakdown">
+          <!-- Líneas de desglose (ej: 3 x iPhone 13 Pro ... 3 x 938.99€) -->
+        </div>
+        <hr class="summary-line">
+        <div class="summary-total">
+          <span class="total-label">TOTAL</span>
+          <span id="final-total" class="total-amount">0.00€</span>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="Carrito.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

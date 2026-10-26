@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  color: #111;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #e2e2e2;
+  margin-bottom: 35px;
+}
+
+.shop-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+/* Columna de productos */
+.products-container {
+  flex: 1;
+}
+
+.table-header {
+  display: flex;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.col-product { flex: 2; }
+.col-qty     { flex: 1.2; text-align: center; }
+.col-price   { flex: 1; text-align: center; }
+.col-total   { flex: 1; text-align: right; }
+
+.product-row {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.prod-info {
+  flex: 2;
+}
+
+.prod-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 5px;
+}
+
+.prod-sku {
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.prod-quantity {
+  flex: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.qty-btn {
+  width: 26px;
+  height: 26px;
+  border: 1px solid #999;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.qty-btn:active {
+  background-color: #e2e2e2;
+}
+
+.qty-input {
+  width: 40px;
+  height: 26px;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 2px;
+  font-size: 0.95rem;
+}
+
+.prod-price {
+  flex: 1;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.prod-subtotal {
+  flex: 1;
+  text-align: right;
+  font-size: 0.95rem;
+}
+
+/* Panel Lateral (Total) */
+.cart-summary {
+  width: 320px;
+  background-color: #dfdfdf;
+  padding: 22px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-summary h2 {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.summary-breakdown {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.summary-line {
+  border: none;
+  border-top: 1px solid #8c8c8c;
+  margin-bottom: 15px;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+/* Ocultar flechas nativas del input number para que se vea limpio */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Alineación del desglose lateral */
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  margin-bottom: 8px;
+}
